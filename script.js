@@ -52,25 +52,27 @@ function playRound(humanChoice, computerChoice) {
 
 
 function playGame() {
-    let humanSelection = toLowerCase(getHumanChoice());
-    let computerSelection = toLowerCase(getComputerChoice());
+    let humanSelection = getHumanChoice().toLowerCase();
+    let computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
 
-    humanSelection = toLowerCase(getHumanChoice());
-    computerSelection = toLowerCase(getComputerChoice());
+    humanSelection = getHumanChoice().toLowerCase();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
 
-    humanSelection = toLowerCase(getHumanChoice());
-    computerSelection = toLowerCase(getComputerChoice());
+    humanSelection = getHumanChoice().toLowerCase();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
 
-    humanSelection = toLowerCase(getHumanChoice());
-    computerSelection = toLowerCase(getComputerChoice());
+    humanSelection = getHumanChoice().toLowerCase();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
 
-    humanSelection = toLowerCase(getHumanChoice());
-    computerSelection = toLowerCase(getComputerChoice());
+    humanSelection = getHumanChoice().toLowerCase();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
 
     console.log(`You won ${humanScore} games whereas the computer won ${computerScore} games!`);
 }
+
+playGame();
